@@ -1,0 +1,36 @@
+import { z } from "zod";
+
+import { UserRole } from "../models/user.model";
+
+// REGISTER
+export const registerSchema = z.object({
+  name: z
+    .string()
+    .min(3, "Name must be at least 3 characters"),
+
+  email: z.email("Invalid email"),
+
+  password: z
+    .string()
+    .min(
+      6,
+      "Password must be at least 6 characters"
+    ),
+
+  
+});
+
+// LOGIN
+export const loginSchema = z.object({
+  email: z.email("Invalid email"),
+
+  password: z.string().min(1),
+});
+
+export const createSalesSchema = z.object({
+  name: z.string().min(3),
+
+  email: z.email(),
+
+  password: z.string().min(6),
+});
