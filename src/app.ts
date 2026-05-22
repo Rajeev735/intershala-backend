@@ -8,7 +8,7 @@ import userRoutes from "./routes/user.routes";
 
 const app=express();
 app.use(cors({
-  origin:"https://internshala-frontend-79gy.vercel.app",
+  origin:"https://internshala-frontend.vercel.app",
   credentials:true
 }))
 app.use(express.json());
