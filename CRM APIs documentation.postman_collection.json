@@ -1,0 +1,299 @@
+{
+  "info": {
+    "_postman_id": "4a7e28de-aa4c-41c8-a06d-f4c9370c2799",
+    "name": "CRM APIs documentation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39625864"
+  },
+  "item": [
+    {
+      "name": "register user",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "login an user",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "check welcome route",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/auth/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/auth/login",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/leads",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/leads",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "leads"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/auth/register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Rajeev\",\r\n  \"email\": \"rajeev@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/auth/register",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/auth/create-sales",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Sales User\",\r\n  \"email\": \"sales@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/auth/create-sales",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "create-sales"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "leads",
+            "6a1098cb144fd6143cbb6272"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Updated Rahul\",\r\n  \"email\": \"updated@gmail.com\",\r\n  \"source\": \"Instagram\",\r\n  \"status\": \"Contacted\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "leads",
+            "6a1098cb144fd6143cbb6272"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/leads/6a1098cb144fd6143cbb6272",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "leads",
+            "6a1098cb144fd6143cbb6272"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://intershala-backend-up65.onrender.com/api/users/sales",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMGQ5MzA2MzEzZDIyYjY5MGNiNTRkNCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTQ3MTYxNCwiZXhwIjoxNzgwMDc2NDE0fQ.IGlWpmatVTM93kXS5Wqn4LWjWjmQ9IjrzyTbwYu8fx0",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://intershala-backend-up65.onrender.com/api/users/sales",
+          "protocol": "https",
+          "host": [
+            "intershala-backend-up65",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "sales"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
